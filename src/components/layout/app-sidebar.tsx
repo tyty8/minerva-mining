@@ -13,6 +13,9 @@ import {
   Mountain,
   ChevronDown,
   Building2,
+  ScrollText,
+  HardHat,
+  Waves,
 } from "lucide-react";
 import {
   Sidebar,
@@ -67,6 +70,29 @@ const navItems = [
         title: "Mapa Geológico",
         href: "/dashboard/geologia",
         icon: Map,
+      },
+    ],
+  },
+  {
+    label: "Cumplimiento Regulatorio",
+    items: [
+      {
+        title: "Extractor RCA",
+        href: "/dashboard/rca",
+        icon: ScrollText,
+        badge: "IA",
+      },
+      {
+        title: "SERNAGEOMIN",
+        href: "/dashboard/sernageomin",
+        icon: HardHat,
+      },
+      {
+        title: "DGA — Agua",
+        href: "/dashboard/dga",
+        icon: Waves,
+        badge: "⚠",
+        badgeVariant: "secondary" as const,
       },
     ],
   },
